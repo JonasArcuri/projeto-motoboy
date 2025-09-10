@@ -1,0 +1,15 @@
+2025-09-04 16:41:06.648507-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USER" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.email,u1_0.name,u1_0.password from t_user u1_0 [42104-232]
+2025-09-04 16:41:17.195972-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USER" not found (this database is empty); SQL statement:
+insert into t_user (email,name,password,id) values (?,?,?,default) [42104-232]
+2025-09-04 16:41:24.080579-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USER" not found (this database is empty); SQL statement:
+insert into t_user (email,name,password,id) values (?,?,?,default) [42104-232]
+2025-09-04 16:41:42.561894-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USER" not found (this database is empty); SQL statement:
+insert into t_user (email,name,password,id) values (?,?,?,default) [42104-232]
+2025-09-04 16:42:07.095623-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USER" not found (this database is empty); SQL statement:
+insert into t_user (email,name,password,id) values (?,?,?,default) [42104-232]
