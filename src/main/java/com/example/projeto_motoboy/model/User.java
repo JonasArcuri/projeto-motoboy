@@ -18,6 +18,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private boolean enabled = false;
+
     @NotBlank(message = "O nome é obrigatório")
     @Size(max = 100, message = "Nome deve ter no máximo 100 caracteres")
     private String name;
@@ -72,4 +74,5 @@ public class User {
     public boolean isMotoboy() {
         return "Motoboy".equals(this.tipo);
     }
+
 }

@@ -4,6 +4,7 @@ import com.example.projeto_motoboy.dto.AuthResponse;
 import com.example.projeto_motoboy.dto.LoginRequest;
 import com.example.projeto_motoboy.model.User;
 import com.example.projeto_motoboy.repository.UserRepository;
+import com.example.projeto_motoboy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,9 @@ public class AuthController {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private UserService userService;
 
     @PostMapping("/login")
     public ResponseEntity<?> authenticateUser(@RequestBody LoginRequest loginRequest) {
